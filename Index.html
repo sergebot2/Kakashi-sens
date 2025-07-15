@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>chatbot octavio</title>
+  <title>chatbot shadow</title>
   <style>
     body {
       background: #111;
@@ -69,7 +69,7 @@
   <nav>
     <a href="index2.html"><button>retour🏃‍♀️</button></a>
   </nav>
-  <h1>𝑲𝑨𝑲𝑨𝑺𝑯𝑰 𝑨𝑰 💻</h1>
+  <h1>shadow 𝑨𝑰 💻</h1>
   <div id="chatbox"></div>
   <form id="inputForm">
     <input type="text" id="inputQuestion" placeholder="Pose ta question..." required />
@@ -86,7 +86,7 @@
     function addMessage(text, sender) {
       const div = document.createElement('div');
       div.className = 'message ' + sender;
-      div.textContent = (sender === 'user' ? 'Vous : ' : '𝙺𝙰𝙺𝙰𝚂𝙷𝙸 𝙰𝙸 :') + text;
+      div.textContent = (sender === 'user' ? 'Vous : ' : 'SHODOW 𝙰𝙸 :') + text;
       chatbox.appendChild(div);
       chatbox.scrollTop = chatbox.scrollHeight;
     }
@@ -127,7 +127,7 @@
       
       let reply = "Je réfléchis...";
   if (isAboutCreator(question)) {
-        reply = "Bonjour ! Je suis kakashi AI, une intelligence artificielle créée par octavio wina 😇. Je suis un grand modèle de langage conçu pour vous aider !";
+        reply = "Bonjour ! Je suis shadow AI, une intelligence artificielle créée par octavio wina 😇. Je suis un grand modèle de langage conçu pour vous aider !";
       } else {
         reply = await askGemini(question);
       }
